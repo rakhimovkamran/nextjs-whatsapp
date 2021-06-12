@@ -1,15 +1,41 @@
 {
-  "name": "nextjs-whatsapp",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "10.2.3",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  }
+    "name": "nextjs-whatsapp",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "pre-commit": "lint-staged",
+        "lint": "eslint .",
+        "postinstall": "husky install && cd app && yarn install"
+    },
+    "lint-staged": {
+      "*.+(js|jsx)": [
+        "eslint --fix",
+        "prettier --write --ignore-unknown"
+      ],
+      "*.+(json|css|md)": [
+        "prettier --write"
+      ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "dependencies": {
+        "next": "10.2.3",
+        "react": "17.0.2",
+        "react-dom": "17.0.2"
+    },
+    "devDependencies": {
+        "eslint": "^7.28.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-react": "^7.24.0",
+        "husky": "^6.0.0",
+        "lint-staged": "^11.0.0",
+        "prettier": "^2.3.1"
+    }
 }
