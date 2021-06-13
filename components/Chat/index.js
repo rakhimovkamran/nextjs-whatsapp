@@ -29,7 +29,7 @@ export const Chat = ({ id, users }) => {
             {recipient ? (
                 <S.UserAvatar src={recipient?.photoURL} />
             ) : (
-                <S.UserAvatar />
+                <S.UserAvatar>{recipientEmail[0]}</S.UserAvatar>
             )}
 
             <p>{recipientEmail}</p>
