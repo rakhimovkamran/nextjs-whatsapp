@@ -11,13 +11,13 @@
         "postinstall": "husky install && cd app && yarn install"
     },
     "lint-staged": {
-      "*.+(js|jsx)": [
-        "eslint --fix",
-        "prettier --write --ignore-unknown"
-      ],
-      "*.+(json|css|md)": [
-        "prettier --write"
-      ]
+        "*.+(js|jsx)": [
+            "eslint --fix",
+            "prettier --write --ignore-unknown"
+        ],
+        "*.+(json|css|md)": [
+            "prettier --write"
+        ]
     },
     "husky": {
         "hooks": {
@@ -25,9 +25,20 @@
         }
     },
     "dependencies": {
+        "@material-ui/core": "^4.11.4",
+        "@material-ui/icons": "^4.11.2",
+        "add": "^2.0.6",
+        "better-react-spinkit": "^2.0.4",
+        "email-validator": "^2.0.4",
+        "firebase": "^8.6.7",
         "next": "10.2.3",
+        "next-images": "^1.7.0",
         "react": "17.0.2",
-        "react-dom": "17.0.2"
+        "react-dom": "17.0.2",
+        "react-firebase-hooks": "^3.0.4",
+        "react-google-button": "^0.7.2",
+        "styled-components": "^5.3.0",
+        "yarn": "^1.22.10"
     },
     "devDependencies": {
         "eslint": "^7.28.0",
