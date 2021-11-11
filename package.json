@@ -8,7 +8,6 @@
         "start": "next start",
         "pre-commit": "lint-staged",
         "lint": "eslint .",
-        "postinstall": "husky install && cd app && yarn install"
     },
     "lint-staged": {
         "*.+(js|jsx)": [
