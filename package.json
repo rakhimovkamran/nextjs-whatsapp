@@ -5,9 +5,7 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
-        "start": "next start",
-        "pre-commit": "lint-staged",
-        "lint": "eslint .",
+        "start": "next start"
     },
     "lint-staged": {
         "*.+(js|jsx)": [
