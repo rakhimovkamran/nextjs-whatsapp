@@ -2,7 +2,7 @@ import Head from "next/head"
 import GoogleButton from "react-google-button"
 
 import { auth, provider } from "../../firebase"
-import { S } from "./index.styled"
+import { S } from "styles/login.styled"
 
 const Login = () => {
     const signIn = () => {
