@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { S } from "./index.styled"
+import { S } from "styles/chat.styled"
 
 import { useAuthState } from "react-firebase-hooks/auth"
 
